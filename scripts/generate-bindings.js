@@ -19,10 +19,10 @@ function generateContents() {
       Object.keys(icons)
         .map(
           icon =>
-            `module ${icon} = MakeIcon({
-  [@bs.module "react-icons/${iconSet.toLowerCase()}"] 
-  external reactClass : ReasonReact.reactClass = "${icon}";
-});`
+            `module ${icon} = {
+  [@bs.module "react-icons/${iconSet.toLowerCase()}"]
+  [@react.component] external make : (~className: string=?, ~color: string=?, ~size: string=?, ~style: ReactDOMRe.Style.t=?) => React.element = "${icon}";
+};`
         )
         .join(`${os.EOL}${os.EOL}`)
     )
