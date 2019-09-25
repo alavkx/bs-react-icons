@@ -30,14 +30,16 @@
     "icons"
   ],
   "devDependencies": {
-    "bs-platform": "^4.0.5",
+    "bs-platform": "^5.0.6",
     "prettier": "^1.14.2",
-    "reason-react": "^0.5.3"
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "reason-react": "^0.7.0"
   },
   "peerDependencies": {
     "reason-react": "^0.5.0"
   },
   "dependencies": {
-    "react-icons": "^3.0.5"
+    "react-icons": "^3.7.0"
   }
 }
