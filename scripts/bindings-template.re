@@ -32,7 +32,7 @@ module Provider = {
     );
 };
 
-module type Icon = {let reactClass: ReasonReact.reactClass;};
+module type Icon = {let reactClass: React.element;};
 
 module MakeIcon = (Icon: Icon) => {
   let make = (~className=?, ~color=?, ~size=?, ~style=?, children) =>
